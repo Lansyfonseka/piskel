@@ -1,0 +1,17 @@
+.navigation_buttons {
+    button {
+        padding: 5px 10px;
+        border: 1px #000000 solid;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        background: linear-gradient(125deg, #ff9900, #fff400);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            border-color: #ffffff;
+            color: #ffffff;
+            transition: 0.2s;
+        }
+    }
+}

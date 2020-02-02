@@ -1,0 +1,95 @@
+.frames{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .frames--items{
+        li{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            border: 4px #303030 solid;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            list-style: none;
+        }
+        .current_frame {
+            border: 4px #ffb100 solid;
+        }
+    }
+    .frames--add_new_frame{
+        padding: 5px;
+        margin: 0 5px;
+        width: fit-content;
+        border: 2px #000000 solid;
+        border-radius: 10px;
+        background: #4b4b4b;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            border-color: #e6c300;
+            transition: 0.2s;
+        }
+    }
+}
+
+.frames--items-canvas{
+    width: 100px;
+    height: 100px;
+    background: url(/simple-piskel-clone/source/components/frames/icons/background.png);
+    image-rendering: pixelated;
+}
+
+.frames--items-controls{
+    position: absolute;
+    button{
+        background-size: 21px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #cacaca91;
+        filter: invert(1);
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        img{
+            width: 70%;
+            filter: invert(1);
+        }
+    }
+    .frame-number{
+        right:20px;
+        bottom:20px;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 1.2rem;
+        cursor: auto;
+    }
+    .frame-delete{
+        left:20px;
+        bottom:20px;
+        background-image: url(/simple-piskel-clone/source/components/frames/icons/trash.svg);
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .frame-drag_drop{
+        right:20px;
+        top:20px;
+        background-image: url(/simple-piskel-clone/source/components/frames/icons/drag.svg);
+        opacity: 0;
+        transition: 0.2s;
+        cursor: all-scroll;
+    }
+    .frame-duplicate{
+        left:20px;
+        top:20px;
+        background-image: url(/simple-piskel-clone/source/components/frames/icons/copy.svg);
+        opacity: 0;
+        transition: 0.2s;
+    }
+}

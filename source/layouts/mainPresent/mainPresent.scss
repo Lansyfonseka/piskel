@@ -1,0 +1,108 @@
+.main_present{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    .preview{
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        background: #686868;
+    }
+}
+
+.information{
+    width: 30rem;
+    margin: auto;
+    .information--title{
+        font-size: 3rem;
+    }
+    .information-description{
+        margin: 10px 0;
+        font-size: 2rem;
+    }
+    button{
+        margin: 0 10px;
+        padding: 5px 10px;
+        border: 1px #000000 solid;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        background: linear-gradient(125deg, #ff9900, #fff400);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            border-color: #ffffff;
+            color: #ffffff;
+            transition: 0.2s;
+        } 
+    }
+}
+
+.screenshot{
+    position: relative;
+    img{
+        width: 90%;
+    }
+    .rotor{
+        width: 148px;
+        top: 44px;
+        position: absolute;
+        right: 142px;
+        background-image: url(/simple-piskel-clone/source/layouts/mainPresent/animations/background.png);
+        background-size: 16px;
+    }
+}
+
+.examples{
+    padding: 20px 0;
+    background: #222222;
+    .examples--title{
+        margin: auto;
+        width: fit-content;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+    .examples--list{
+        margin: 20px auto;
+        width: 700px;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            border: 5px #acacac solid;
+            background-image: url(/simple-piskel-clone/source/layouts/mainPresent/animations/background.png);
+            background-size: 16px;
+            img{
+                width: 100px;
+            }
+        }
+    }
+}
+
+.footer{
+    background: #0c0c0c;
+    .footer--description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:  #ffffff;
+        a{
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        img{
+            margin: 20px;
+            width: 40px;
+            filter: invert(1);
+        }
+    }
+    .footer--icon{
+        font-size: 4rem;
+        text-align: end;
+        font-family: "Pixies";
+        color: #9a9a9a;
+    }
+}

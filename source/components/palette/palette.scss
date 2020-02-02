@@ -1,0 +1,38 @@
+.palette{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    input {
+        padding: 0;
+        border: 2px #2b2b2b solid;
+        margin: 2px;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+    }
+    .second_color {
+        margin-left: 56px;
+    }
+    .change_color_icon {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+        width: 50px;
+        height: 50px;
+        background: #d4d4d4;
+        filter: invert(1);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+            background: #858585;
+            transition: 0.2s;
+        }
+        img {
+            width: 30px;
+        }
+    }
+}

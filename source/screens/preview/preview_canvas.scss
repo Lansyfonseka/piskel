@@ -1,0 +1,10 @@
+#preview_canvas{
+    margin: 20px;
+    width: 17vw;
+    height: 17vw;
+    outline: 2px red solid;
+    outline-offset: 5px;
+    background: url(/simple-piskel-clone/source/screens/preview/background.png);
+    box-shadow: 2px 4px 6px black;
+    image-rendering: pixelated;
+}

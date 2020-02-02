@@ -1,0 +1,50 @@
+.settings{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .settings--canvas_size{
+        padding: 10px;
+        width: 150px;
+        height: 200px;
+        font-size: 1.5rem;
+        text-align: center;
+        background: #2b2b2b;
+        color: #ffffff;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        .settings--canvas_size-list_sizes{
+            li{
+                margin: 10px;
+                list-style: none;
+                border: 2px #2b2b2b solid;
+                cursor: pointer;
+                transition: 0.2s;
+                &:hover{
+                background: #7a7a7a;
+                transition: 0.2s;
+                }
+            }
+            .current{
+                border: 2px #ffb100 solid;
+                transition: 0.2s;
+            }
+        }
+    }
+    .settings--icon{
+        width: 50px;
+        height: 50px;
+        background-color: #d4d4d4;
+        background-image: url(/simple-piskel-clone/source/components/settings/gear.svg);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: #858585;
+            transition: 0.2s;
+        }
+    }
+}
+    

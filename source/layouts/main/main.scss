@@ -1,0 +1,28 @@
+main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 268px 1fr 20vw 50px;
+    height: 93vh;
+    background: #4b4b4b;
+    .left_side--container{
+        display: flex;
+        overflow: hidden;
+    }
+    .middle--container{
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        background: #a8a8a8;
+    }
+    .settings--container{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: absolute;
+        right: 0px;
+        width: 50px;
+        height: 100%;
+        transition: 1s;
+    }
+}
+
