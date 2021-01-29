@@ -1,26 +1,16 @@
-  
 @charset "UTF-8";
-
-@import
-  "./basic/basic.scss";
-
-@import 
-  "./layouts/header/header.scss",
-  "./layouts/main/main.scss",
-  "./layouts/mainPresent/mainPresent.scss";
-
-@import
-  "./components/tools/tools.scss",
-  "./components/frames/frames.scss",
-  "./components/buttons/buttons.scss",
-  "./components/palette/palette.scss",
-  "./components/penSize/penSize.scss",
-  "./components/fps/fps.scss",
-  "./components/settings/settings.scss";
-
-@import 
-  "./fonts/fonts.scss";
-
-@import 
-  "./screens/canvas/main_canvas.scss",
-  "./screens/preview/preview_canvas.scss";
+@import "./basic/basic.scss";
+@import "./layouts/header/header.scss",
+"./layouts/footer/footer.scss",
+"./layouts/main/main.scss",
+"./layouts/mainPresent/mainPresent.scss";
+@import "./components/tools/tools.scss",
+"./components/frames/frames.scss",
+"./components/buttons/buttons.scss",
+"./components/palette/palette.scss",
+"./components/penSize/penSize.scss",
+"./components/fps/fps.scss",
+"./components/settings/settings.scss";
+@import "./fonts/fonts.scss";
+@import "./screens/canvas/main_canvas.scss",
+"./screens/preview/preview_canvas.scss";

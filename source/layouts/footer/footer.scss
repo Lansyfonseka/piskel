@@ -1,0 +1,38 @@
+footer {
+    position: relative;
+    min-height: 100px;
+    background: #0c0c0c;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    @media screen and (max-width: 620px) {
+        min-height: 80px;
+    }
+    .footer--description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        a {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        img {
+            margin: 20px;
+            width: 40px;
+            filter: invert(1);
+        }
+    }
+    .footer--icon {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        font-size: 3rem;
+        text-align: end;
+        font-family: "Pixies";
+        color: #9a9a9a;
+        @media screen and (max-width: 620px) {
+            font-size: 1.5rem;
+        }
+    }
+}

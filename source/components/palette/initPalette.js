@@ -1,6 +1,6 @@
 import mainData from "../../mainData.js";
 
-export default function initPalette(){
+export default function initPalette() {
     const frame = document.createElement("div");
     frame.classList.add("palette");
 
@@ -27,7 +27,7 @@ export default function initPalette(){
     });
 
     const img = document.createElement("img");
-    img.src = "/simple-piskel-clone/source/components/palette/arrows.svg";
+    img.src = "./source/components/palette/arrows.svg";
     changeColorIcon.appendChild(img);
 
     frame.appendChild(currentColor);

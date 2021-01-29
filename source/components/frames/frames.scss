@@ -1,8 +1,8 @@
-.frames{
+.frames {
     overflow-y: scroll;
     overflow-x: hidden;
-    .frames--items{
-        li{
+    .frames--items {
+        li {
             position: relative;
             display: flex;
             justify-content: center;
@@ -18,7 +18,7 @@
             border: 4px #ffb100 solid;
         }
     }
-    .frames--add_new_frame{
+    .frames--add_new_frame {
         padding: 5px;
         margin: 0 5px;
         width: fit-content;
@@ -36,59 +36,58 @@
     }
 }
 
-.frames--items-canvas{
+.frames--items-canvas {
     width: 100px;
     height: 100px;
-    background: url(/simple-piskel-clone/source/components/frames/icons/background.png);
+    background: url(/piskel/source/components/frames/icons/background.png);
     image-rendering: pixelated;
 }
 
-.frames--items-controls{
+.frames--items-controls {
     position: absolute;
-    button{
+    button {
         background-size: 21px;
         background-repeat: no-repeat;
         background-position: center;
         background-color: #cacaca91;
         filter: invert(1);
-
         position: absolute;
         display: flex;
         justify-content: center;
         width: 30px;
         height: 30px;
         cursor: pointer;
-        img{
+        img {
             width: 70%;
             filter: invert(1);
         }
     }
-    .frame-number{
-        right:20px;
-        bottom:20px;
+    .frame-number {
+        right: 20px;
+        bottom: 20px;
         font-family: 'ZCOOL QingKe HuangYou', cursive;
         font-size: 1.2rem;
         cursor: auto;
     }
-    .frame-delete{
-        left:20px;
-        bottom:20px;
-        background-image: url(/simple-piskel-clone/source/components/frames/icons/trash.svg);
+    .frame-delete {
+        left: 20px;
+        bottom: 20px;
+        background-image: url(/piskel/source/components/frames/icons/trash.svg);
         opacity: 0;
         transition: 0.2s;
     }
-    .frame-drag_drop{
-        right:20px;
-        top:20px;
-        background-image: url(/simple-piskel-clone/source/components/frames/icons/drag.svg);
+    .frame-drag_drop {
+        right: 20px;
+        top: 20px;
+        background-image: url(/piskel/source/components/frames/icons/drag.svg);
         opacity: 0;
         transition: 0.2s;
         cursor: all-scroll;
     }
-    .frame-duplicate{
-        left:20px;
-        top:20px;
-        background-image: url(/simple-piskel-clone/source/components/frames/icons/copy.svg);
+    .frame-duplicate {
+        left: 20px;
+        top: 20px;
+        background-image: url(/piskel/source/components/frames/icons/copy.svg);
         opacity: 0;
         transition: 0.2s;
     }
