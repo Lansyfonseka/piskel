@@ -1,20 +1,24 @@
 main {
     display: grid;
     position: relative;
-    grid-template-columns: 268px 1fr 20vw 50px;
-    height: 93vh;
+    grid-template-columns: 268px 1fr 20vw;
+    height: 100%;
     background: #4b4b4b;
-    .left_side--container{
+    .left_side--container {
         display: flex;
         overflow: hidden;
     }
-    .middle--container{
-        margin: 0 10px;
+    .middle--container {
         display: flex;
         justify-content: center;
         background: #a8a8a8;
     }
-    .settings--container{
+    .right_side--container {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .settings--container {
         display: flex;
         align-items: center;
         overflow: hidden;
@@ -25,4 +29,3 @@ main {
         transition: 1s;
     }
 }
-

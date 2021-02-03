@@ -1,14 +1,17 @@
-.frame_fps{
+.frame_fps {
     display: flex;
-    margin: 0 20px;
-    padding: 5px;
-    width: fit-content;
+    margin: 10px auto;
+    width: 90%;
     background: #2b2b2b;
     color: #ffffff;
-    .counter_fps{
+    .counter_fps {
         margin: 5px;
         width: 60px;
         font-size: 1.2rem;
         font-family: 'ZCOOL QingKe HuangYou', cursive;
+    }
+    input {
+        margin: 5px;
+        width: 85%;
     }
 }
