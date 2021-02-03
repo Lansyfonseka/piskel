@@ -11,10 +11,10 @@ export default function hoverInit() {
         ctx.fillStyle = color;
 
         canvas.onmousemove = (e) => {
-            const x1 = Math.floor(e.offsetX / styleSize * size);
-            const y1 = Math.floor(e.offsetY / styleSize * size);
+            const x = Math.floor(e.offsetX / styleSize * size);
+            const y = Math.floor(e.offsetY / styleSize * size);
             ctx.clearRect(0, 0, size, size);
-            ctx.fillRect(x1, y1, penSize, penSize);
+            ctx.fillRect(x, y, penSize, penSize);
         };
 
         canvas.onmouseout = (e) => {

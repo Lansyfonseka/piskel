@@ -15,7 +15,7 @@ const tools = {
         description: "Pen",
         utils: () => {
             removeEvents();
-            mainData.screens.mainCanvas.addEventListener("mousedown", pencil);
+            mainData.screens.hoverCanvas.addEventListener("mousedown", pencil);
         }
     },
     1: {
@@ -23,7 +23,7 @@ const tools = {
         description: "Eraser",
         utils: () => {
             removeEvents();
-            mainData.screens.mainCanvas.addEventListener("mousedown", eraser);
+            mainData.screens.hoverCanvas.addEventListener("mousedown", eraser);
         }
     },
     2: {
@@ -31,7 +31,7 @@ const tools = {
         description: "Bucket",
         utils: () => {
             removeEvents();
-            mainData.screens.mainCanvas.addEventListener("click", fillBucket);
+            mainData.screens.hoverCanvas.addEventListener("click", fillBucket);
         }
     },
     3: {
@@ -39,7 +39,7 @@ const tools = {
         description: "Paint same color",
         utils: () => {
             removeEvents();
-            mainData.screens.mainCanvas.addEventListener("click", paintSameColor);
+            mainData.screens.hoverCanvas.addEventListener("click", paintSameColor);
         }
     },
     4: {
@@ -55,7 +55,7 @@ const tools = {
         description: "Pipette",
         utils: () => {
             removeEvents();
-            mainData.screens.mainCanvas.addEventListener("click", pipette);
+            mainData.screens.hoverCanvas.addEventListener("click", pipette);
         }
     },
     6: {
