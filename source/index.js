@@ -25,8 +25,6 @@ function initPiskel() {
 
     initMainButtons();
     hoverInit();
-
-    // console.log(mainData.screens.hoverCanvas.offsetWidth);
 }
 
 initPiskel();

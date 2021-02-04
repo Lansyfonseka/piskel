@@ -24,6 +24,33 @@ export default function initTools() {
                 mainData.currentTool = item;
             });
         }
+        item.onmouseenter = (e) => {
+            const left = e.target.getBoundingClientRect().left;
+            const top = e.target.getBoundingClientRect().top;
+            const widthParent = e.target.getBoundingClientRect().width;
+            const heightParent = e.target.getBoundingClientRect().height;
+
+            const fragment = document.createElement("div");
+            const arrow = document.createElement("div");
+            const discription = document.createElement("div");
+
+            fragment.classList.add("toolTip");
+            arrow.classList.add("toolTip--arrow");
+            discription.classList.add("toolTip--discription");
+            discription.innerHTML = tools[key].description;
+
+            fragment.appendChild(arrow);
+            fragment.appendChild(discription);
+            document.body.appendChild(fragment);
+            const heightChild = fragment.getBoundingClientRect().height;
+
+            fragment.style.left = `${left+widthParent}px`;
+            fragment.style.top = `${top+(heightParent-heightChild)/2}px`;
+
+            item.onmouseleave = (e) => {
+                fragment.remove();
+            }
+        };
         item.appendChild(icon);
         frame.appendChild(item);
         mainData.tools.push(item);

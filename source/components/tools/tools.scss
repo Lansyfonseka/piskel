@@ -1,11 +1,12 @@
-.tools{
+.tools {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto 0;
     padding: 0 20px;
     width: fit-content;
     list-style: none;
-    li{
+    li {
+        position: relative;
         display: flex;
         justify-content: center;
         margin: 2px;
@@ -18,12 +19,37 @@
         img {
             width: 30px;
         }
-        &:hover{
+        &:hover {
             background: #858585;
             transition: 0.2s;
         }
     }
-    .active_tool{
+    .active_tool {
         outline: 2px #004eff solid;
     }
+}
+
+.toolTip {
+    position: absolute;
+    margin-left: 2px;
+    display: flex;
+}
+
+.toolTip--discription {
+    padding: 5px;
+    border-radius: 3px;
+    background: #151515;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    transition: 0.5s;
+}
+
+.toolTip--arrow {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #151515;
 }
