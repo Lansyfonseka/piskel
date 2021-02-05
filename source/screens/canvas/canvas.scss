@@ -4,9 +4,16 @@
     position: relative;
     margin: auto;
     width: 95%;
+    max-width: 90vh;
     canvas {
         position: absolute;
         width: 100%;
+    }
+    &::after {
+        content: "";
+        display: block;
+        padding-top: 50%;
+        padding-bottom: 50%;
     }
 }
 
